@@ -1,0 +1,252 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        height: 100vh;
+        font-family: 'Segoe UI';
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'header' 'main' 'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 1rem 5rem;
+        height: 100%;
+    }
+    
+    header {
+        grid-area: header;
+        background-color: #F8F8F8;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    
+    header a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    header a:hover {
+        color: #43B273;
+    }
+    
+    .logga {
+        width: 45%;
+        margin-top: 30%;
+        margin-left: 2%;
+    }
+    
+    .cart {
+        width: 15%;
+    }
+    
+    .border {
+        grid-area: header;
+        border-bottom: 5px solid #A7E4B8;
+        width: 85%;
+        margin-left: 14%;
+    }
+    /* Footer */
+    
+    footer {
+        background-color: #CCC1C1;
+        margin-top: 40vh;
+    }
+    /* Produkters styling */
+    
+    .produkter {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    
+    .produkter li {
+        flex: 0 1 30rem;
+        margin: 1rem;
+        margin-bottom: 0;
+        background-color: #E4E3E5;
+    }
+    
+    .produkt {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 1%;
+    }
+    
+    .produkt img {
+        max-height: 26rem;
+        max-width: 22rem;
+        width: 70%;
+        display: block;
+        margin: auto;
+        padding: 1%;
+    }
+    
+    .produktnamn,
+    .produktinfo,
+    .produktpris {
+        margin-left: 16%;
+    }
+    
+    .produkter a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .produkter a:hover {
+        color: #43B273;
+    }
+    /* Produktsidans styling */
+    
+    .produktdetaljer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .produktsida {
+        padding: 1rem;
+        margin: auto;
+        max-width: 1920px;
+        width: 75%;
+        margin: auto;
+    }
+    
+    .detaljbild {
+        flex: 2 1 30rem;
+    }
+    
+    .back {
+        margin-bottom: 2%;
+    }
+    
+    .detaljbild img {
+        max-width: 30rem;
+        width: 100%;
+    }
+    
+    .textinfo {
+        flex: 1 15rem;
+    }
+    
+    .textinfo ul {
+        list-style-type: none;
+    }
+    
+    .textinfo li {
+        padding-bottom: 3%;
+        font-size: larger;
+    }
+    
+    #add-button,
+    #addinshop {
+        background-color: #43B273;
+        width: 12rem;
+        padding: 2%;
+        font-size: larger;
+        color: white;
+        border: #43B273;
+        font-weight: bold;
+    }
+    
+    #addinshop {
+        margin-left: 9rem;
+        margin-top: 5%;
+    }
+    
+    #add-button:hover,
+    #addinshop:hover {
+        border: black 2px solid;
+    }
+    /* Varukorgens styling */
+    
+    .varukorgen {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-top: 7%;
+    }
+    
+    .varukorgen-listad {
+        flex: 3 1 30rem;
+        padding: 1rem;
+        list-style-type: none;
+    }
+    
+    .varukorgen-listad li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid black;
+    }
+    
+    .varukorgen-listad li:first-child {
+        align-items: flex-end;
+    }
+    
+    .varukorgen-listad img {
+        max-width: 10rem;
+        max-height: 10rem;
+    }
+    
+    .varukorgen-action {
+        flex: 1 1 10rem;
+        background-color: #A7E4B8;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-top: 4%;
+    }
+    
+    .varukorgen-bild {
+        flex: 1 1;
+    }
+    
+    .varukorgen-namn {
+        flex: 1 1;
+    }
+    
+    .varukorgen-pris {
+        flex: 1 1;
+        text-align: right
+    }
+    /* Logga in sidans styling */
+    
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .form-items {
+        display: flex;
+        flex-direction: column;
+        width: 32rem;
+        padding: 2rem;
+        border: 0.2rem solid #43B273;
+        background-color: #E4E3E5;
+        border-radius: 0.5rem;
+        list-style-type: none;
+    }
+    
+    .form-items li {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
